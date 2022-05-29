@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "discounts",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "singularName": "discount",
+    "pluralName": "discounts",
+    "displayName": "Discount"
   },
   "options": {
     "draftAndPublish": true
@@ -18,11 +17,17 @@
     "description": {
       "type": "string"
     },
-    "products": {
+    "discount_percent": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "product": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::product.product",
-      "mappedBy": "category_id"
+      "inversedBy": "discounts"
     }
   }
 }

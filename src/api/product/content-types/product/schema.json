@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "name": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "string"
     },
-    "Price": {
+    "price": {
       "type": "float"
     },
     "images": {
@@ -32,14 +32,22 @@
         "audios"
       ]
     },
-    "category": {
+    "category_id": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "units": {
-      "type": "integer"
+    "discounts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::discount.discount",
+      "mappedBy": "product"
+    },
+    "product_inventory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-inventory.product-inventory"
     }
   }
 }
