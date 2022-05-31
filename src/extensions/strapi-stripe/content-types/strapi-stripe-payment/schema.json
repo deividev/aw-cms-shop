@@ -68,10 +68,10 @@
       "inversedBy": "stripePayment",
       "configurable": false
     },
-    "users_permissions_user": {
+    "user_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "admin::user"
     }
   }
 }
