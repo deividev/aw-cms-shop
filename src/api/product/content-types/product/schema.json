@@ -48,12 +48,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product-inventory.product-inventory"
-    },
-    "user_wish_list": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::user-wish-list.user-wish-list",
-      "inversedBy": "products"
     }
   }
 }
