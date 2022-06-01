@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.1.12",
     "better-sqlite3": "7.4.6",
     "mysql": "^2.18.1",
+    "strapi-plugin-vercel-deploy": "^1.1.0",
     "strapi-stripe": "^1.10.0"
   },
   "author": {
@@ -25,7 +26,7 @@
     "uuid": "c12a3a20-bee9-4dbc-9d9f-7ed0b3f4d354"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
