@@ -2,13 +2,12 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'mysql',
     connection: {
-      host: env('DATABASE_HOST', '127.0.0.1'),
-      port: env.int('DATABASE_PORT', 3306),
-      database: env('DATABASE_NAME', 'awcmsstrapi'),
+      host: env('DATABASE_HOST', 'db-aw-shop-do-user-11714534-0.b.db.ondigitalocean.com'),
+      port: env.int('DATABASE_PORT', 25060),
+      database: env('DATABASE_NAME', 'defaultdb'),
       user: env('DATABASE_USERNAME', ''),
       password: env('DATABASE_PASSWORD', ''),
-      ssl: env.bool('DATABASE_SSL', false),
+      ssl: env.bool('DATABASE_SSL', true),
     },
   },
 });
-
