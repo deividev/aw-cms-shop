@@ -15,20 +15,30 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "category_id"
     },
-    "sub_categories": {
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subcategories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::sub-category.sub-category",
-      "mappedBy": "category"
+      "target": "api::category.category"
     }
   }
 }
