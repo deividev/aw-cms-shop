@@ -48,6 +48,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product-inventory.product-inventory"
+    },
+    "isEnumsWeight": {
+      "type": "boolean"
     }
   }
 }
