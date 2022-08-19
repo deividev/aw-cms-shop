@@ -29,12 +29,6 @@
         "audios"
       ]
     },
-    "category_id": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "products"
-    },
     "discounts": {
       "type": "relation",
       "relation": "oneToMany",
@@ -48,6 +42,11 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }

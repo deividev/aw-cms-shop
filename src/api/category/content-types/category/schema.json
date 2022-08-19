@@ -18,8 +18,7 @@
     "products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::product.product",
-      "mappedBy": "category_id"
+      "target": "api::product.product"
     },
     "description": {
       "type": "richtext"
@@ -35,10 +34,10 @@
         "audios"
       ]
     },
-    "subcategories": {
+    "sub_categories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::category.category"
+      "target": "api::sub-category.sub-category"
     }
   }
 }
