@@ -18,7 +18,7 @@
     "price": {
       "type": "float"
     },
-    "images": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
