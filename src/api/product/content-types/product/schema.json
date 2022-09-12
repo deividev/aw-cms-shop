@@ -47,6 +47,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "brands": {
+      "type": "enumeration",
+      "enum": [
+        "Raw",
+        "Ocb",
+        "Xuxes"
+      ]
     }
   }
 }
