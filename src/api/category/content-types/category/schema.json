@@ -34,10 +34,10 @@
         "audios"
       ]
     },
-    "sub_categories": {
+    "subcategories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::sub-category.sub-category"
+      "target": "api::category.category"
     }
   }
 }
