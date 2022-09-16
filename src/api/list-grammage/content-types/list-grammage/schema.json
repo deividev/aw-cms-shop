@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_grammages",
+  "info": {
+    "singularName": "list-grammage",
+    "pluralName": "list-grammages",
+    "displayName": "listGrammage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "listType": {
+      "type": "json"
+    }
+  }
+}

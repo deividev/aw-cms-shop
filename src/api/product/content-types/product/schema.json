@@ -55,6 +55,11 @@
         "Ocb",
         "Xuxes"
       ]
+    },
+    "list_grammage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::list-grammage.list-grammage"
     }
   }
 }
