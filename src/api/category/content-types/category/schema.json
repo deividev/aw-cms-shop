@@ -38,6 +38,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "subCategorie": {
+      "type": "boolean"
     }
   }
 }
