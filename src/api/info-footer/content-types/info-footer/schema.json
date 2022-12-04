@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_footers",
+  "info": {
+    "singularName": "info-footer",
+    "pluralName": "info-footers",
+    "displayName": "InfoFooter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
