@@ -56,10 +56,18 @@
         "Xuxes"
       ]
     },
-    "list_grammage": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Azul",
+        "Blanco",
+        "Marron"
+      ]
+    },
+    "properties_product": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::list-grammage.list-grammage"
+      "target": "api::properties-product.properties-product"
     }
   }
 }

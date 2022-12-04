@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties_products",
+  "info": {
+    "singularName": "properties-product",
+    "pluralName": "properties-products",
+    "displayName": "PropertiesProduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
