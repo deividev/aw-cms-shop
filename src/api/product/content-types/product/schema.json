@@ -16,7 +16,7 @@
       "type": "string"
     },
     "price": {
-      "type": "decimal"
+      "type": "float"
     },
     "image": {
       "type": "media",
@@ -29,17 +29,6 @@
         "audios"
       ]
     },
-    "discounts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::discount.discount",
-      "mappedBy": "product"
-    },
-    "product_inventory": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product-inventory.product-inventory"
-    },
     "description": {
       "type": "richtext"
     },
@@ -48,7 +37,7 @@
       "relation": "oneToOne",
       "target": "api::category.category"
     },
-    "brands": {
+    "brand": {
       "type": "enumeration",
       "enum": [
         "Raw",
@@ -68,6 +57,18 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::properties-product.properties-product"
+    },
+    "units_sold": {
+      "type": "biginteger"
+    },
+    "price_discount": {
+      "type": "float"
+    },
+    "percent_discount": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "biginteger"
     }
   }
 }
