@@ -42,7 +42,9 @@
       "enum": [
         "Raw",
         "Ocb",
-        "Xuxes"
+        "Xuxes",
+        "G-Rollz",
+        "Rizla"
       ]
     },
     "color": {
