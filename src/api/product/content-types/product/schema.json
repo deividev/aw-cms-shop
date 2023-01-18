@@ -71,6 +71,15 @@
     },
     "stock": {
       "type": "biginteger"
+    },
+    "group_product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group-product.group-product",
+      "inversedBy": "products"
+    },
+    "size": {
+      "type": "string"
     }
   }
 }
