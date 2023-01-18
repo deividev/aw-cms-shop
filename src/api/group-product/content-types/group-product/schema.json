@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "group_products",
+  "info": {
+    "singularName": "group-product",
+    "pluralName": "group-products",
+    "displayName": "group_product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "group_product"
+    }
+  }
+}
