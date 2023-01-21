@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_lists",
+  "info": {
+    "singularName": "home-list",
+    "pluralName": "home-lists",
+    "displayName": "Home_list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
