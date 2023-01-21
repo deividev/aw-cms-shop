@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_contents",
+  "info": {
+    "singularName": "home-content",
+    "pluralName": "home-contents",
+    "displayName": "Home_content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::home-link.home-link"
+    },
+    "home_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::home-list.home-list"
+    }
+  }
+}

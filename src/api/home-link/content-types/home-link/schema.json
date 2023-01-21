@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_links",
+  "info": {
+    "singularName": "home-link",
+    "pluralName": "home-links",
+    "displayName": "Home_link"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "subCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
