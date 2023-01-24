@@ -55,11 +55,6 @@
         "Marron"
       ]
     },
-    "properties_product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::properties-product.properties-product"
-    },
     "units_sold": {
       "type": "biginteger"
     },
